@@ -103,6 +103,7 @@ span:hover {
 .img-text-div {
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 #value {
