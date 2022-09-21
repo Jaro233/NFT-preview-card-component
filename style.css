@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.main-container {
+    -webkit-box-shadow: -1px 3px 24px -3px rgba(27, 27, 35, 1);
+    -moz-box-shadow: -1px 3px 24px -3px rgba(27, 27, 35, 1);
+    box-shadow: -1px 3px 24px -3px rgba(27, 27, 35, 1);
+    max-width: 350px;
+    margin: 150px auto;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 20px;
+    color: hsl(215, 51%, 70%);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+#equilibrium {
+    max-width: 350px;
+    top: 250px;
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    height: auto;
+    z-index: 1;
+}
+
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%, 60%);
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+#equilibrium-id {
+    color: white;
+    font-weight: 600;
+}
+
+#equilibrium-id:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+#description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+span {
+    color: white;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.value-days-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-text-div {
+    display: flex;
+    align-items: center;
+}
+
+#value {
+    color: hsl(178, 100%, 50%);
+}
+
+.small-img {
+    margin-right: 8px;
+}
+
+#avatar {
+    max-width: 27px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 16px;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .main-container {
+        margin: 30px auto;
+    }
+}
