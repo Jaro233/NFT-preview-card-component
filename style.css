@@ -4,21 +4,27 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .main-container {
     -webkit-box-shadow: -1px 3px 24px -3px rgba(27, 27, 35, 1);
     -moz-box-shadow: -1px 3px 24px -3px rgba(27, 27, 35, 1);
     box-shadow: -1px 3px 24px -3px rgba(27, 27, 35, 1);
-    max-width: 350px;
-    margin: 150px auto;
+    max-width: 21.875rem;
+    width: 100%;
+    margin: 1.25rem;
     background-color: hsl(216, 50%, 16%);
-    padding: 20px;
-    border-radius: 20px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
     color: hsl(215, 51%, 70%);
 }
 
@@ -28,10 +34,10 @@ body {
 }
 
 #equilibrium {
-    max-width: 350px;
-    top: 250px;
+    max-width: 21.875rem;
+    top: 15.625rem;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     display: block;
     height: auto;
     z-index: 1;
@@ -51,7 +57,7 @@ body {
     background-color: hsl(178, 100%, 50%, 60%);
     text-align: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .overlay img {
@@ -103,7 +109,7 @@ span:hover {
 .img-text-div {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 #value {
@@ -111,20 +117,18 @@ span:hover {
 }
 
 .small-img {
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 
 #avatar {
-    max-width: 27px;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin-right: 16px;
+    max-width: 1.6875rem;
+    border: 0.0625rem solid white;
+    border-radius: 1.25rem;
+    margin-right: 1rem;
 }
 
-
-
-@media screen and (max-width: 1080px) {
-    .main-container {
-        margin: 30px auto;
+@media screen and (max-width: 478px) {
+    footer {
+        display: none;
     }
 }
